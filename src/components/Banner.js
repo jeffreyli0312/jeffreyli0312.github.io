@@ -71,9 +71,8 @@ function Banner () {
                 <h1 className="typeAnimation"><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Full-Stack Developer", "Backend Developer", "Mechatronics Engineer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>
                     Hello! I am a second year Mechatronics student at the University of Waterloo with a strong passion for software development. Throughout my academic journey, I’ve gained experience in mechanical design, computer vision, 
-                    machine learning, and web development. Alongside a strong commitment to academic excellence, I actively seek to enhance my problem-solving skills with new projects, work experiences, and environments. I’m particularly 
-                    interested in building games, applications, and platforms that have the potential to help others, elevate quality of life, and even inspire positive global change. In my leisure time, you can find me collecting rare 
-                    sneakers, playing competitive table tennis, and tailoring custom outerwear.
+                    machine learning, and web development.  I’m particularly excited to enhance my problem-solving skills with new projects, work experiences, and environments that have the potential to help others, elevate quality of 
+                    life, or even inspire positive global change. In my leisure time, you can find me collecting rare sneakers, playing competitive table tennis, and tailoring custom outerwear.
                   </p>
 
                   <div>
