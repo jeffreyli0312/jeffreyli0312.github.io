@@ -6,7 +6,7 @@ import TrackVisibility from 'react-on-screen';
 
 import medical from "../assets/img/project-medical-logo.jpg";
 import beSuccessful from "../assets/img/project-BeSuccessful.png";
-import client from "../assets/img/project-client.png";
+import client from "../assets/img/project-client.jpg";
 
 // 519 x 380
 
@@ -22,7 +22,7 @@ function Projects(){
     },
     {
       title: <a href='https://github.com/jeffreyli0312/client-manager' target='_blank' style={{color: 'white', textDecoration: 'none'}}>Client Record System <img src={newTab} style={{height: 'auto', width:'6%'}}></img></a>,
-      description: <div style={{margin: '0px 35px 0px 35px', textAlign: 'left'}}><h7>Client Manager tracks and registers all clients using object-oriented design, polymorphism, algorithmic searching/sorting, and more. Customers can be upgraded, downgraded, modified, sorted, or searched.</h7></div>,
+      description: <div style={{margin: '0px 35px 0px 35px', textAlign: 'left'}}><h7>VetTech Client Manager tracks and registers vet clinic clients using object-oriented design, polymorphism, algorithmic searching/sorting, and more. Customers can be upgraded, downgraded, modified, sorted, or searched.</h7></div>,
       imgUrl: client,
     },
     {

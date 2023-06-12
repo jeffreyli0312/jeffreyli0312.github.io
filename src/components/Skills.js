@@ -45,7 +45,7 @@ function Skills() {
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={python} alt="Image" />
-                                <h5>Python</h5>
+                                <h5>Python ML/OpenCV</h5>
                             </div>
                             <div className="item">
                                 <img src={c} style={{height: 'auto'}} alt="Image" />

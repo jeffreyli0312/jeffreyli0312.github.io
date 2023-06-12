@@ -97,9 +97,9 @@ function Banner () {
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                <div style={{marginLeft: '30px'}} className={isVisible ? "animate__animated animate__zoomIn" : ""}>
                   {/* <img src={headerImg} alt="Header Img"/> */}
-                  <img src={test} alt="Header Img" style={{width: '350px', height: 'auto', borderRadius: '10%', marginLeft: '70px', marginTop: '25px', objectFit: 'contain'}} />
+                  <img src={test} alt="Header Img" style={{width: '350px', height: 'auto', borderRadius: '10%', marginLeft: '30px', marginTop: '15px', objectFit: 'contain'}} />
                 </div>}
             </TrackVisibility>
           </Col>
