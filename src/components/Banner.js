@@ -13,7 +13,7 @@ import { HashLink } from 'react-router-hash-link';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-import CV from '../assets/Resume_Winter2023.pdf'
+import CV from '../assets/Good_Resume_09172025.pdf'
 import newTab from "../assets/img/icons8-new-tab.svg";
 
 function Banner () {
