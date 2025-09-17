@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.c37f84b9.css",
-    "main.js": "/static/js/main.cbe7a825.js",
+    "main.js": "/static/js/main.cb3bd0e9.js",
     "static/js/787.6bb95da0.chunk.js": "/static/js/787.6bb95da0.chunk.js",
     "static/media/color-sharp2.png": "/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
-    "static/media/grad.PNG": "/static/media/grad.7ca1c41867d95cfb530f.PNG",
+    "static/media/profile_photo.jpg": "/static/media/profile_photo.9c74fab9049d510388a4.jpg",
     "static/media/Resume_Winter2023.pdf": "/static/media/Resume_Winter2023.9c10ebdab234a9c77fe7.pdf",
     "static/media/header-img.svg": "/static/media/header-img.84bf93eb20488a753440bf83d27db7bb.svg",
     "static/media/CentraNo2-Bold.ttf": "/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
@@ -35,11 +35,11 @@
     "static/media/icons8-css.svg": "/static/media/icons8-css.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/icons8-html.svg": "/static/media/icons8-html.c1bb84e022ca9d76984d4b943bd678fd.svg",
     "main.c37f84b9.css.map": "/static/css/main.c37f84b9.css.map",
-    "main.cbe7a825.js.map": "/static/js/main.cbe7a825.js.map",
+    "main.cb3bd0e9.js.map": "/static/js/main.cb3bd0e9.js.map",
     "787.6bb95da0.chunk.js.map": "/static/js/787.6bb95da0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c37f84b9.css",
-    "static/js/main.cbe7a825.js"
+    "static/js/main.cb3bd0e9.js"
   ]
 }
