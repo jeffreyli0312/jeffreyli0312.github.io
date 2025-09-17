@@ -8,6 +8,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 function Footer(){
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer">
       <Container>
@@ -24,7 +26,7 @@ function Footer(){
               <a href="https://www.linkedin.com/in/jeffreyli0312/" target="_blank"><img src={navIcon2} alt="LinkedIn" /></a>
               <a href="mailto:j2662li@uwaterloo.com" target="_blank"><img src={navIcon3} alt="Email" /></a>
             </div>
-            <p>© 2023 Jeffrey Li. All Rights Reserved</p>
+            <p>© {currentYear} Jeffrey Li. All Rights Reserved</p>
           </Col>
         </Row>
       </Container>
