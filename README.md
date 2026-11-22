@@ -1,41 +1,27 @@
 # portfolio-jeffrey
 
-Ran terminal command: git status --short --branch; git branch -vv; git remote -v
+This React portfolio is hosted on GitHub Pages.
 
-Ran terminal command: git log --oneline --decorate --graph --all -n 12
+## Branches
 
-Ran terminal command: git diff --stat main..gh-pages; git diff --stat gh-pages main
-Completed with input: git diff --stat main..gh-pages; git diff --stat gh-pages main
+- **`main`** contains the React source, including `src/`, `public/`, and `package.json`.
+- **`gh-pages`** contains the generated production site. GitHub Pages publishes from this branch.
 
-Ran terminal command: Get-Content package.json
+## Deploy to GitHub Pages
 
-Ran terminal command: git ls-tree --name-only main; git ls-tree --name-only gh-pages
+Run the deploy script from the repository root.
 
-`main` and `gh-pages` serve different purposes:
-
-- **`main`** contains the React source: src, public, package.json, etc.
-- **`gh-pages`** contains the generated production website from the build directory.
-
-This happens because package.json defines:
-
-```json
-"predeploy": "npm run build",
-"deploy": "gh-pages -d build"
-```
-
-Running `npm run deploy` builds the website and pushes build to `gh-pages`.
-
-GitHub Pages uses **`gh-pages`** as its publishing branch, so it serves the compiled files—even if `main` has newer source changes.
-
-To update the live site:
-
-```bash
+```sh
 npm run deploy
 ```
 
-This rebuilds the site and updates `gh-pages`. Commit source changes on `main` separately:
+The `predeploy` script runs `npm run build`. The `deploy` script then publishes the contents of `build/` to `gh-pages`.
 
-```bash
+## Commit source changes
+
+Commit and push your source changes to `main` separately from deployment.
+
+```sh
 git add .
 git commit -m "Update portfolio"
 git push origin main

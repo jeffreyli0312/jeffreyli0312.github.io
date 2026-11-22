@@ -2,19 +2,12 @@ import { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import headerImg from "../assets/img/header-img.svg";
-import test from "../assets/img/profile_photo.jpg";
-import { ArrowRightCircle } from "react-bootstrap-icons";
+import profilePhoto from "../assets/img/profile_photo.jpg";
+import { BoxArrowUpRight, Envelope } from "react-bootstrap-icons";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
-import { HashLink } from 'react-router-hash-link';
-
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-
 import CV from '../assets/Good_Resume_09172025.pdf'
-import newTab from "../assets/img/icons8-new-tab.svg";
 
 function Banner () {
   const [loopNum, setLoopNum] = useState(0);
@@ -60,59 +53,44 @@ function Banner () {
 
   return (
     <section className="banner" id="home">
-      <Container>
-        <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-              <div className="animate__animated animate__fadeIn">
-                {/* <span className="tagline" id="about">Welcome to my Portfolio</span> */}
-                <h1 id="about">{`Hi! I'm Jeffrey Li `} </h1>
-                <h1 className="typeAnimation"><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Data Engineer", "Software Developer", "Mechatronics Engineer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>
-                    Hello! I’m a Mechatronics Engineering graduate from the University of Waterloo, currently 
-                    working as a Data Engineer with a strong passion for software development. Throughout my 
-                    academic and professional journey, I’ve gained experience in mechanical design, computer 
-                    vision, machine learning, web development, and building data pipelines. I enjoy tackling 
-                    complex problems, developing efficient and scalable solutions, and continuously expanding 
-                    my technical skills through new projects and experiences. I’m particularly passionate about 
-                    using technology to solve real-world problems and improve everyday life.
-
-                    In my leisure time, you can find me collecting rare sneakers, exploring the city of Toronto, 
-                    lifting weights, and tailoring custom outerwear.
-                  </p>
-
-                  <div>
-                  <a href={CV} target= 'blank'>
-                    <button style={{marginTop: '10px', float:'left',  marginRight: '20px', padding: '10px 10px 12px 10px', border: '1px solid white'}}>
-                      Resume<img src={newTab} style={{height: 'auto', width:'20%', animation: 'none', marginLeft: '6px'}}></img>
-                    </button>
-                  </a>
-                  
-                    <Navbar.Brand href="#connect">
-                      <button style={{ marginTop: '10px', float:'left', display:'inline', padding: '10px 10px 10px 0px'}}>Let’s Connect<ArrowRightCircle size={25} /></button>
-                      {/* <ArrowRightCircle size={25} /> */}
-                    </Navbar.Brand>
-                  </div>
-
-
-
-                  
-              </div>}
-            </TrackVisibility>
+      <Container className="px-4">
+        <Row className="align-items-center gx-lg-5 gy-4 gy-lg-0">
+          <Col xs={12} lg={7}>
+            <div className="banner-content animate__animated animate__fadeIn">
+              <h1 id="about">Hi! I'm Jeffrey Li</h1>
+              <div className="banner-role">{text}</div>
+              <p>
+                Hello! I’m a Mechatronics Engineering graduate from the University of Waterloo, currently
+                working as a Data Engineer with a strong passion for software development. Throughout my
+                academic and professional journey, I’ve gained experience in mechanical design, computer
+                vision, machine learning, web development, and building data pipelines. I enjoy tackling
+                complex problems, developing efficient and scalable solutions, and continuously expanding
+                my technical skills through new projects and experiences. I’m particularly passionate about
+                using technology to solve real-world problems and improve everyday life.
+              </p>
+              <p>
+                In my leisure time, you can find me collecting rare sneakers, exploring the city of Toronto,
+                lifting weights, and tailoring custom outerwear.
+              </p>
+              <div className="banner-actions">
+                <a className="banner-action" href={CV} target="_blank" rel="noopener noreferrer">
+                  Resume
+                  <BoxArrowUpRight size={20} aria-hidden="true" />
+                </a>
+                <a className="banner-action" href="#connect">
+                  Let’s Connect
+                  <Envelope size={20} aria-hidden="true" />
+                </a>
+              </div>
+            </div>
           </Col>
-          <Col xs={12} md={6} xl={5} className="text-center text-md-end">
+          <Col xs={12} lg={5}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  {/* <img src={headerImg} alt="Header Img"/> */}
-                  <img
-                    src={test}
-                    alt="Jeffrey Li"
-                    className="profile-photo"
-                    style={{ marginTop: '15px', objectFit: 'contain' }}
-                  />
-                </div>}
+                  <img src={profilePhoto} alt="Jeffrey Li" className="profile-photo" />
+                </div>
+              }
             </TrackVisibility>
           </Col>
         </Row>
