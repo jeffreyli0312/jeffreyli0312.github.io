@@ -22,7 +22,7 @@ function Banner () {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(200 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Full-Stack Developer", "Backend Developer", "Mechatronics Engineer" ];
+  const toRotate = [ "Data Engineer", "Software Developer", "Mechatronics Engineer" ];
   const period = 2000;
 
   useEffect(() => {
@@ -68,11 +68,18 @@ function Banner () {
               <div className="animate__animated animate__fadeIn">
                 {/* <span className="tagline" id="about">Welcome to my Portfolio</span> */}
                 <h1 id="about">{`Hi! I'm Jeffrey Li `} </h1>
-                <h1 className="typeAnimation"><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Full-Stack Developer", "Backend Developer", "Mechatronics Engineer" ]'><span className="wrap">{text}</span></span></h1>
+                <h1 className="typeAnimation"><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Data Engineer", "Software Developer", "Mechatronics Engineer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>
-                    Hello! I am a Mechatronics student at the University of Waterloo, graduating April 2026 with a strong passion for software development. Throughout my academic journey, I’ve gained experience in mechanical design, computer vision, 
-                    machine learning, and web development. I’m particularly excited to enhance my problem-solving skills with new projects, work experiences, and environments that have the potential to help others or elevate quality of 
-                    life. In my leisure time, you can find me collecting rare sneakers, playing competitive table tennis, and tailoring custom outerwear.
+                    Hello! I’m a Mechatronics Engineering graduate from the University of Waterloo, currently 
+                    working as a Data Engineer with a strong passion for software development. Throughout my 
+                    academic and professional journey, I’ve gained experience in mechanical design, computer 
+                    vision, machine learning, web development, and building data pipelines. I enjoy tackling 
+                    complex problems, developing efficient and scalable solutions, and continuously expanding 
+                    my technical skills through new projects and experiences. I’m particularly passionate about 
+                    using technology to solve real-world problems and improve everyday life.
+
+                    In my leisure time, you can find me collecting rare sneakers, exploring the city of Toronto, 
+                    lifting weights, and tailoring custom outerwear.
                   </p>
 
                   <div>
@@ -94,12 +101,17 @@ function Banner () {
               </div>}
             </TrackVisibility>
           </Col>
-          <Col xs={12} md={6} xl={5}>
+          <Col xs={12} md={6} xl={5} className="text-center text-md-end">
             <TrackVisibility>
               {({ isVisible }) =>
-                <div style={{marginLeft: '30px'}} className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
                   {/* <img src={headerImg} alt="Header Img"/> */}
-                  <img src={test} alt="Header Img" style={{width: '350px', height: 'auto', borderRadius: '10%', marginLeft: '30px', marginTop: '15px', objectFit: 'contain'}} />
+                  <img
+                    src={test}
+                    alt="Jeffrey Li"
+                    className="profile-photo"
+                    style={{ marginTop: '15px', objectFit: 'contain' }}
+                  />
                 </div>}
             </TrackVisibility>
           </Col>

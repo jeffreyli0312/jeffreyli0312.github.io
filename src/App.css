@@ -630,3 +630,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+.profile-photo {
+  display: block;
+  width: min(350px, 85vw);
+  max-width: 100%;
+  height: auto;
+  border-radius: 10%;
+  margin: 15px auto 0;
+}
+
+@media (min-width: 768px) {
+  .profile-photo {
+    width: 350px;
+    margin: 15px 0 0 auto;
+  }
+}
