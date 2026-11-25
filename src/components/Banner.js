@@ -7,7 +7,7 @@ import { BoxArrowUpRight, Envelope } from "react-bootstrap-icons";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
-import CV from '../assets/Good_Resume_09172025.pdf'
+import CV from '../assets/Jeffrey_Li_Data_Engineer_Resume.pdf'
 
 function Banner () {
   const [loopNum, setLoopNum] = useState(0);
